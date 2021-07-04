@@ -1,13 +1,13 @@
-package com.assignment;
+package assignment;
 
 public class exceptionWithTwoMethods {
-	
 	String str;
 	
-	exceptionWithTwoMethods() {
+	public exceptionWithTwoMethods() {
 		this.str = null;
 	}
-	exceptionWithTwoMethods(String st) {
+	
+	public exceptionWithTwoMethods(String st) {
 		this.str = st;
 	}
 	
@@ -21,14 +21,15 @@ public class exceptionWithTwoMethods {
 	}
   
 	private void method2() {
-		System.out.println("\nThe string begins with - " + str[0]);
+		System.out.println("\nThe string begins with - " + str.charAt(0));
 	}
   
+
 	public static void main(String[] args) {
-    String str = "Hello, I'm the author of this program!";
-    
+		String str = "Hello, I'm the author of this program!";
+	    
 		exceptionWithTwoMethods excpObj1 = new exceptionWithTwoMethods();
-    exceptionWithTwoMethods excpObj2 = new exceptionWithTwoMethods(str);
+		exceptionWithTwoMethods excpObj2 = new exceptionWithTwoMethods(str);
     
 		try {
 			excpObj1.method1();
@@ -37,11 +38,12 @@ public class exceptionWithTwoMethods {
 			System.out.println("\nCustomized exception meesage: " + e.getMessage());
 		}		
     
-    try {
+		try {
 			excpObj2.method1();
 		}
 		catch(customException e) {
 			System.out.println("\nCustomized exception meesage: " + e.getMessage());
-		}	
+		}
+		
 	}
 }
