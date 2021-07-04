@@ -1,8 +1,8 @@
 package com.assignment;
 
 public class customException extends NullPointerException{
-	public customException(String str) {
-		System.out.println("Custom Exception: "+ str);
+	public customException(String errorMessage) {
+		System.out.println("Custom Exception: "+ errorMessage);
 	}
 
 }
