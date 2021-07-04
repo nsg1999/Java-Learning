@@ -9,8 +9,8 @@ public class arrayCatchAndReset {
 			arr[indexPointer] = 49;
 		}
     
-		catch(ArrayIndexOutOfBoundsException excp) {
-			System.out.println("An exception has been caught, it says - \"" + excp.getMessage() + "\"");
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("An exception has been caught, it says - \"" + e.getMessage() + "\"");
 		}
     
 		finally {
