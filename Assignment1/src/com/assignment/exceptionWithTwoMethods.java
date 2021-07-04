@@ -33,17 +33,10 @@ public class exceptionWithTwoMethods {
     
 		try {
 			excpObj1.method1();
-		}
-		catch(customException e) {
-			System.out.println("\nCustomized exception meesage: " + e.getMessage());
-		}		
-    
-		try {
 			excpObj2.method1();
 		}
 		catch(customException e) {
 			System.out.println("\nCustomized exception meesage: " + e.getMessage());
-		}
-		
+		}				
 	}
 }
