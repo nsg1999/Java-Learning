@@ -9,10 +9,8 @@ public class Shape {
 	}
 	
 	public static void main(String[] args) throws NotASquareException {
-		
 		Scanner sc = new Scanner(System.in);
 		Shape shapeObj = new Shape();
-		
 		System.out.println("Kindly enter the length and width: ");
 		
 		length = sc.nextInt();
